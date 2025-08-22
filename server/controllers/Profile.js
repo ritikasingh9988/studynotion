@@ -1,5 +1,5 @@
 const Profile = require("../models/Profile")
-const CourseProgress = require("../models/courseProgress")
+const CourseProgress = require("../models/CourseProgress")
 
 const Course = require("../models/Course")
 const User = require("../models/User")
@@ -10,8 +10,8 @@ const { convertSecondsToDuration } = require("../utils/secToDuration")
 exports.updateProfile = async (req, res) => {
   try {
     const {
-      firstName,
-      lastName,
+      firstName = "",
+      lastName = "",
       dateOfBirth = "",
       about = "",
       contactNumber = "",

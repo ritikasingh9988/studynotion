@@ -1,11 +1,12 @@
 import React from 'react'
 
 import {Swiper, SwiperSlide} from "swiper/react"
-import { Autoplay,FreeMode,Navigation, Pagination}  from 'swiper/modules';
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
-
+import "swiper/css/navigation"
+import "swiper/css/autoplay"
+import { Autoplay,FreeMode,Navigation, Pagination}  from 'swiper/modules'
 
 import Course_Card from './Course_Card'
 

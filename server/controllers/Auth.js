@@ -95,7 +95,7 @@ exports.signup = async (req, res) => {
       accountType: accountType,
       approved: approved,
       additionalDetails: profileDetails._id,
-      image: `https://api.dicebar.com/5.x/initials/svg?seed=${firstName}${lastName}`,
+      image: "",
     })
 
     return res.status(200).json({
@@ -182,6 +182,13 @@ exports.login = async (req, res) => {
 exports.sendotp = async (req, res) => {
   try {
     const { email } = req.body
+
+    if(!email) {
+      return res.status(400).json({
+        success: false,
+        message: "Email is required",
+      })
+    }
 
     // Check if user is already present
     // Find user with provided email

@@ -4,16 +4,16 @@ import ReactStars from "react-rating-stars-component"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 // Import Swiper styles
-
-import {FreeMode, Pagination, Autoplay} from "swiper/modules";
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
+import "swiper/css/autoplay"
+import { FreeMode, Pagination, Autoplay } from "swiper/modules"
 import "../../App.css"
 // Icons
 import { FaStar } from "react-icons/fa"
 // Import required modules
-
+//import { Autoplay, FreeMode, Pagination } from "swiper"
 
 // Get apiFunction and the endpoint
 import { apiConnector } from "../../services/apiconnector"
